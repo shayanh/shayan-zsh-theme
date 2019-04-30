@@ -1,3 +1,5 @@
+# vim:ft=zsh ts=2 sw=2 sts=2
+
 function prompt_char {
 	if [ $UID -eq 0 ]; then echo "#"; else echo %%; fi
 }
