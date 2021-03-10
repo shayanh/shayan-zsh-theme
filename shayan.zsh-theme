@@ -5,7 +5,7 @@ function prompt_char {
 }
 
 function prompt_virtualenv {
-	[[ -n "$VIRTUAL_ENV" && -n $VIRTUAL_ENV_DISABLE_PROMPT ]] && echo -n "%{$fg_bold[green]%}(${VIRTUAL_ENV:t})%{$reset_color%} " || echo -n ""
+	[[ -n "$VIRTUAL_ENV" && -n $VIRTUAL_ENV_DISABLE_PROMPT ]] && echo -n "%{$fg_bold[white]%}(${VIRTUAL_ENV:t})%{$reset_color%} " || echo -n ""
 }
 
 local ret_status="%(?:%{$fg_bold[cyan]%}@:%{$fg_bold[red]%}@)"
